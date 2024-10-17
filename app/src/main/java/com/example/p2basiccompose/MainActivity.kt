@@ -35,4 +35,15 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            P2BasicComposeTheme {}
+            P2BasicComposeTheme {
+                // A surface container using the 'background' color from the theme
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    BasicLayout(modifier = Modifier.fillMaxSize())
+                    BasicLayout(modifier = Modifier.padding(innerPadding))
+                }
+            }
+        }
+    }
+}
+
+
