@@ -30,3 +30,4 @@ import com.example.p2basiccompose.ui.theme.P2BasicComposeTheme
 import com.example.p2basiccompose.BasicLayout as BasicLayout
 
 class MainActivity : ComponentActivity() {
+    @OptIn(ExperimentalMaterial3Api::class)
