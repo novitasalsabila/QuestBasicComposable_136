@@ -54,3 +54,26 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize()
     ){
+        Text(text = "Login", style = TextStyle(fontSize = 50.sp,
+            fontWeight = FontWeight.Bold )
+        )
+        Text(text = "Ini adalah halaman login")
+        Image(painter = painterResource(id = R.drawable.logo),
+            contentDescription = null,
+            modifier = Modifier.padding(top = 20.dp).size(200.dp)
+        )
+
+        Text(text = "Nama",
+            modifier = Modifier.padding(top=20.dp))
+        Text(text = "Novita Salsabila", color = Color.Red,
+            style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold) )
+        Text(text = "20220140136",
+            style = TextStyle(fontSize = 30.sp, fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(top=20.dp))
+        Image(painter = painterResource(id = R.drawable.novi), contentDescription = null,
+            modifier = Modifier.padding(top = 40.dp).size(300.dp))
+    }
+
+
+}
+
